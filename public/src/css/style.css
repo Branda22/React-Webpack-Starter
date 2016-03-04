@@ -1,0 +1,31 @@
+* {
+	font-family: consolas;
+}
+
+.navbar {
+	display: block;
+	width: 100%;
+	min-height: 50px;
+	line-height: 50px;
+	background-color: #01579B;
+	color: #ffffff;
+}
+
+.navbar-logo {
+	color: #ffffff;
+    text-decoration: none;
+    opacity: 0.8;
+    font-size: 25px;
+    font-family: Pacifico;
+    margin-left: 20px;
+}
+
+.navbar-link {
+	display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    margin-right: 20px;
+    float: right;
+    opacity: 0.8;
+}

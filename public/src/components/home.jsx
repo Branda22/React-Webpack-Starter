@@ -1,4 +1,5 @@
 import React from 'react';
+import NameList from '../container/nameslist.jsx';
 
 class Home extends React.Component {
 	constructor(props) {

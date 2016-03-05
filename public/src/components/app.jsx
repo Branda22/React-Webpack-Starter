@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Router, Route, Link, useRouterHistory, IndexRoute } from 'react-router';
 import { createHashHistory } from 'history'
+import reducers from '../reducers';
 import Home from './home.jsx';
 import About from './about.jsx';
 
 const appHistory = useRouterHistory(createHashHistory)({ queryKey: false });
+const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 
 class App extends React.Component {
@@ -34,4 +38,4 @@ const Routes = (
 	</Router>
 )
 
-ReactDOM.render(Routes, document.getElementById('app'));
+ReactDOM.render(<Provider store={createStoreWithMiddleware(reducers)}>{Routes}</Provider>, document.getElementById('app'));

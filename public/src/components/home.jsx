@@ -1,6 +1,7 @@
 import React from 'react';
 import NameList from '../container/nameslist.jsx';
 
+
 class Home extends React.Component {
 	constructor(props) {
 		super(props)
@@ -13,7 +14,7 @@ class Home extends React.Component {
 					<div className="alert">This is an alert.</div>
 				</div>
 				<div className="col-6">
-					<div className="alert">This is an alert.</div>
+					<NameList />
 				</div>
 			</div>
 		</div>
